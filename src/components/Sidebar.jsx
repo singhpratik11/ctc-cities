@@ -5,6 +5,7 @@ import AddCityModal from './AddCityModal.jsx';
 const NAV = [
   { to: '/', label: 'Dashboard', icon: '▦' },
   { to: '/expenses', label: 'Expenses', icon: '₹' },
+  { to: '/calculator', label: 'Calculator', icon: '⇔' },
   { to: '/compare', label: 'Compare', icon: '⇌' },
   { to: '/simulator', label: 'Simulator', icon: '⟳' },
   { to: '/settings', label: 'Settings', icon: '⚙' },

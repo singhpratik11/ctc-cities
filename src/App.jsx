@@ -8,6 +8,7 @@ import Compare from './pages/Compare.jsx';
 import Simulator from './pages/Simulator.jsx';
 import Settings from './pages/Settings.jsx';
 import Expenses from './pages/Expenses.jsx';
+import Calculator from './pages/Calculator.jsx';
 
 export default function App() {
   const store = useStore();
@@ -48,6 +49,13 @@ export default function App() {
                   updateExpense={store.updateExpense}
                   ctc={store.ctc}
                   regime={store.regime}
+                  settings={store.settings}
+                />
+              } />
+              <Route path="/calculator" element={
+                <Calculator
+                  cities={store.cities}
+                  expenses={store.expenses}
                   settings={store.settings}
                 />
               } />

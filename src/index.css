@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  body {
+    @apply bg-gray-50 text-gray-900;
+    font-family: 'Inter', system-ui, sans-serif;
+    margin: 0;
+  }
+
+  .dark body {
+    @apply bg-gray-950 text-gray-100;
+  }
+
+  #root {
+    width: 100%;
+    min-height: 100vh;
+    text-align: left;
+  }
+}
+
+/* Per-rupee bar animation */
+.per-rupee-segment {
+  transition: width 300ms ease;
+}
+
+/* Savings badge color transitions */
+.badge-savings {
+  transition: background-color 400ms ease, color 400ms ease;
+}
